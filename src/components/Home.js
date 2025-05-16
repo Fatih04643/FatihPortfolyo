@@ -73,10 +73,9 @@ function Home() {
               left: -4,
               right: -4,
               bottom: -4,
-              borderRadius: '50%',
+              borderRadius: '8px',
               background: 'linear-gradient(45deg, #64ffda, #7c3aed)',
               opacity: 0.5,
-              animation: 'spin 12s linear infinite',
               zIndex: 0,
             },
             '&::after': {
@@ -86,20 +85,11 @@ function Home() {
               left: -3,
               right: -3,
               bottom: -3,
-              borderRadius: '50%',
+              borderRadius: '8px',
               background: 'linear-gradient(225deg, #7c3aed, #64ffda)',
               opacity: 0.3,
-              animation: 'spin 12s linear infinite reverse',
               filter: 'blur(12px)',
               zIndex: 0,
-            },
-            '@keyframes spin': {
-              '0%': {
-                transform: 'rotate(0deg)',
-              },
-              '100%': {
-                transform: 'rotate(360deg)',
-              },
             },
           }}
         >
@@ -112,6 +102,7 @@ function Home() {
               border: '4px solid rgba(100, 255, 218, 0.2)',
               position: 'relative',
               zIndex: 1,
+              borderRadius: '8px',
               boxShadow: '0 0 30px rgba(100, 255, 218, 0.2)',
               transition: 'all 0.3s ease-in-out',
               '&:hover': {
